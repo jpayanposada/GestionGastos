@@ -1,0 +1,107 @@
+::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  header {
+    width: 100%;
+    overflow: hidden;
+    background-color:
+    #49BAFF
+  }
+  
+  .botones_arriba{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    padding: 5px;
+    
+  }
+  
+  .botones3 {
+    
+    margin: 10px;
+    padding: 5px 30px;
+    font-family: Dosis, sans-serif;
+    border: unset;
+    border-radius: 15px;
+    color: black;
+    z-index: 1;
+    background: white;
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(15, 14, 14, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+  .botones3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #f27b35;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .botones3:hover {
+    color: white;
+   }
+   
+  .botones3:hover::before {
+    width: 100%;
+   }
+  
+  nav {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  
+  header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {    
+    color: black;
+    padding: 15px 40px;
+    display: block;
+    font-size: 1.1rem;
+    transition: all .4s ease-in-out; 
+  }
+  a{
+    font-family: Dosis, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header nav ul li {
+      display: block;
+      margin-right: 0;
+    }
+  
+    nav ul li a {
+      text-align: center;
+    }
+  }
+  
+  
+  

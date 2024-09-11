@@ -1,0 +1,33 @@
+footer{
+    background-color: #49BAFF;
+    color: black
+  }
+
+.abajo_titulo{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top: 50px;
+  }
+
+.abajo_general{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    padding-top: 40px;  
+    margin: 10px 0px;
+  }
+
+   
+  .abajo_titulo p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+.abajo_texto{
+    text-align: center;
+}
